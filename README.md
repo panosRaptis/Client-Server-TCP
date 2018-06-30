@@ -36,7 +36,7 @@ Starts from a starting_URL. If this URL is valid, it searches recursevly for oth
 Crawler can also listen to an other port (command port) in odrer to receive the following command requests from the administrator:
  * STATS: Implements time up, number of pages served and number of bytes written.
  * SHUTDOWN: Closes connection and terminates.
- * SEARCH words: Searches for those words (max. 10) into downloaded pages, ignoring HTML Tags. Search Command is implemanted by generating new worker processes. Crawler connects with each of these processes using pipes.  
+ * SEARCH word1 [word2 ... word10]: Searches for those words (max. 10) into downloaded pages, ignoring HTML Tags. Search Command is implemanted by generating new worker processes. Crawler connects with each of these processes using pipes.  
 
 Connecting to command port can be done using *Telnet*.
 
