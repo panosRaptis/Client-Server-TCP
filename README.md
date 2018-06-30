@@ -19,6 +19,7 @@ Serves HTTP requests from specific websites' pages -by searching into root_direc
 Server can also listen to an other port (command port) in odrer to receive the following command requests from the administrator:
  * STATS: Implements time up, number of pages served and number of bytes read.
  * SHUTDOWN: Closes connection and terminates.
+ 
 Administrator can connect to command port using *eg. Telnet or ncat etc*.
 
 ##### Compilation
