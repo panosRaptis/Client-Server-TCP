@@ -3,7 +3,7 @@
 The following program is devided into the following 3 units:
  - Web Site Creator
  - TCP Web Server
- - TCP Web Crawler
+ - TCP Web Client (Crawler)
  
 ### Web Site Creator in Shell
 
@@ -30,7 +30,7 @@ make
 ```
 ./myhttpd -p serverport -c commandport -t num_threads -d root_directory
 ```
-### TCP Web Crawler in C
+### TCP Web Client (Crawler) in C
 
 Starts from a starting_URL. If this URL is valid, it searches recursevly for other URLs, into that page, and sends a GET request for each of them. Process completes after all links from each page are downloaded. A threadpool (with num_threads) is also used in order to manage all responces. Each thread is responsible for one responce.
 Crawler can also listen to an other port (command port) in odrer to receive the following command requests from the administrator:
