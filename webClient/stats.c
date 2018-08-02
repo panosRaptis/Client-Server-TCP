@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include <pthread.h>
-#include <unistd.h>
-#include <malloc.h>
-
 #include "stats.h"
 
 Stats * createStats() { // create Stat structure
