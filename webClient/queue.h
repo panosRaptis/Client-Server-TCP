@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
-#include <strlib.h>
+#include <stdlib.h>
 #include "HashTable.h"
 
 #define THREAD_QUEUE_SIZE 200
