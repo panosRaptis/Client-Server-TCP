@@ -1,6 +1,11 @@
 #ifndef STATS_H
 #define STATS_H
 
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <stdlib.h>
+
 typedef struct Stats {
     unsigned long long int numOfPages;
     unsigned long long int numOfBytes;
