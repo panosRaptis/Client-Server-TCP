@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include <pthread.h>
-#include <unistd.h>
-#include <malloc.h>
-
 #include "queue.h"
 
 // Course Slides - Topic 6 (THreads)
