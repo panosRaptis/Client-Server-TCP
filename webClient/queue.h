@@ -2,6 +2,10 @@
 #ifndef PRODUCER_CONSUMER_H
 #define PRODUCER_CONSUMER_H
 
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <strlib.h>
 #include "HashTable.h"
 
 #define THREAD_QUEUE_SIZE 200
