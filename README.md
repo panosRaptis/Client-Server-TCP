@@ -52,4 +52,4 @@ To compile each program type ``` make ``` inside relevant directory. Type  ``` m
 
 ### Telnet
 
-Command requests can be sent via Telnet, by typing: ``` telnet server_host_orIP server_post ```.  Connection closes after sending a request.
+Command requests can be sent via Telnet, by typing: ``` telnet server_host_orIP server_port ```.  Connection closes after sending a request.
