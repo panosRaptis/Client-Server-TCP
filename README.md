@@ -11,7 +11,7 @@ Creates w websites which contain p pages (html files) - on disk and store them i
 
 ##### Running
 ```
-./webcreator.sh root_directory text_file.txt w p
+./webcreator.sh root_directory text_file w p
 ```
 ### TCP Web Server in C
 
@@ -22,13 +22,9 @@ Server can also listen to an other port (command port) in odrer to receive the f
  
 Connecting to command port can be done using *Telnet*.
 
-##### Compilation
-```
-make
-```
 ##### Running
 ```
-./myhttpd -p serverport -c commandport -t num_threads -d root_directory
+./myhttpd -p server_port -c command_port -t num_threads -d root_directory
 ```
 ### TCP Web Client (Crawler) in C
 
@@ -40,15 +36,19 @@ Crawler can also listen to an other port (command port) in odrer to receive the 
 
 Connecting to command port can be done using *Telnet*.
 
-##### Compilation
-```
-make
-```
 ##### Running
 ```
 ./mycrawler -h server_host_or_IP -p server_port -c crawler_command_port -t num_threads -d save_dir starting_URL
 ```
- 
- 
 
+### Compilation
 
+To compile each program type ``` make ``` inside relevant directory. Type  ``` make clean ``` to remove object files.
+
+### Telnet
+
+Command requests can be sent via Telnet, by typing: ``` telnet server_host_orIP server_post ```.  Connection closes after sending a request.
+
+### Http Requests
+
+Http Requests can be also sent via Firefox by typing ``` server_host_or_IP:server_port/siteX/pageX_YYYY.html ```
