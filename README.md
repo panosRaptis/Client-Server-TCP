@@ -26,6 +26,11 @@ Connecting to command port can be done using *Telnet*.
 ```
 ./myhttpd -p server_port -c command_port -t num_threads -d root_directory
 ```
+
+##### Http Requests
+
+Http Requests can be also sent via Firefox by typing ``` server_host_or_IP:server_port/siteX/pageX_YYYY.html ```
+
 ### TCP Web Client (Crawler) in C
 
 Starts from a starting_URL. If this URL is valid, it searches recursevly for other URLs, into that page, and sends a GET request for each of them. Process completes after all links from each page are downloaded. A threadpool (with num_threads) is also used in order to manage all responces. Each thread is responsible for one responce.
@@ -48,7 +53,3 @@ To compile each program type ``` make ``` inside relevant directory. Type  ``` m
 ### Telnet
 
 Command requests can be sent via Telnet, by typing: ``` telnet server_host_orIP server_post ```.  Connection closes after sending a request.
-
-### Http Requests
-
-Http Requests can be also sent via Firefox by typing ``` server_host_or_IP:server_port/siteX/pageX_YYYY.html ```
