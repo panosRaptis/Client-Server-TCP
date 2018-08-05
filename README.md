@@ -29,7 +29,7 @@ Connecting to command port can be done using *Telnet*.
 
 ##### Http Requests
 
-Http Requests can be also sent via Firefox by typing ``` http:server_host_or_IP:server_port/siteX/pageX_YYYY.html ```
+Http Requests can be also sent via Firefox by typing ``` http://server_host_or_IP:server_port/siteX/pageX_YYYY.html ```
 
 ### TCP Web Client (Crawler) in C
 
